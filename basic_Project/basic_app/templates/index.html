@@ -1,0 +1,21 @@
+{% load static %}
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Django Static Files</title>
+    {% tailwind_css %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    
+    <h1 class = 'text=5xl'>
+        Welcome To Django Static Files
+    </h1>
+    <p>
+        This is Simple Django Static File
+    </p>
+</body>
+</html>
