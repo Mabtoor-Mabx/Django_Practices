@@ -1,0 +1,17 @@
+<!-- django_database_app/templates/django_database_app/student_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student List</title>
+</head>
+<body>
+    <h1>All Students</h1>
+    <ul>
+        {% for student in students %}
+            <li>{{ student.name }} - {{ student.roll_no }} - {{ student.email }}</li>
+        {% empty %}
+            <li>No students found in the database.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
